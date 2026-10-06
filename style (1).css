@@ -1,0 +1,113 @@
+/* Fondo general estilo taberna de noche */
+body {
+    background-color: #0d0c10; /* Negro carbón profundo */
+    color: #e2e8f0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tu gran título medieval en inglés */
+#titulo-taberna {
+    font-family: 'MedievalSharp', cursive, serif;
+    color: #d4af37; /* Dorado oro medieval */
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    /* Efecto de brillo cálido tipo fuego de antorcha */
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.subtitulo {
+    color: #a0aec0;
+    text-align: center;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 45px;
+}
+
+/* Contenedor vertical de juegos para celular */
+.contenedor-juegos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+/* Estilo base de las tarjetas de la taberna */
+.tarjeta-juego {
+    background-color: #16151a; /* Gris madera quemada muy oscuro */
+    border: 1px solid #2a2831;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    border-left: 5px solid #d4af37; /* Detalle dorado principal */
+    transition: transform 0.2s;
+}
+
+.tarjeta-juego h2 {
+    font-family: 'MedievalSharp', sans-serif;
+    color: #e2e8f0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+}
+
+/* Le cambiamos el color al borde izquierdo de los juegos bloqueados para que se note el candado */
+#card-trivia, #card-futbol {
+    border-left-color: #4a4a5a; 
+    opacity: 0.85; /* Se ven un poquito más apagados por estar bloqueados */
+}
+
+.tarjeta-juego p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+/* Botón de Jugar Táctil Dorado */
+.btn-jugar {
+    display: block;
+    background-color: #d4af37;
+    color: #0d0c10;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-jugar:active {
+    background-color: #aa8c2c;
+    transform: scale(0.97);
+}
+
+/* Botón bloqueado */
+.btn-desactivado {
+    display: block;
+    width: 100%;
+    background-color: #1f1e24;
+    color: #4a4a5a;
+    border: 1px dashed #3a3a4a;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+}
